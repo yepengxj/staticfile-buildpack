@@ -11,10 +11,10 @@
 # either express or implied. See the License for the specific language governing permissions
 # and  limitations under the License.
 # ------------------------------------------------------------------------------------------------
-
 export APP_ROOT=$HOME
 export LD_LIBRARY_PATH=$APP_ROOT/nginx/lib:$LD_LIBRARY_PATH
 
+echo "PORT: $PORT"
 conf_file=$APP_ROOT/nginx/conf/nginx.conf
 if [ -f $APP_ROOT/public/nginx.conf ]
 then
