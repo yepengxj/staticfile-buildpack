@@ -43,6 +43,7 @@ rsync -a \
       --exclude='/stackato.yml' \
       $root_dir/ $build_dir/public
 
+status "root_dir $root_dir"
 status "Setting up nginx"
 tar xzf $compile_nginx_tgz
 cp -f $compile_buildpack_dir/conf/nginx.conf nginx/conf/nginx.conf
